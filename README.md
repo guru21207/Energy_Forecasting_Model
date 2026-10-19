@@ -37,6 +37,10 @@ The dataset includes the following information:
 
 The dataset is stored in `data/train.csv`.
 
+A cleaned base snapshot is also available at [`data/cleaned_train.csv`](data/cleaned_train.csv). It is generated in the notebook after parsing the timestamp and sorting the records chronologically. This file preserves the cleaned, timestamp-ordered base data; it does **not** contain the later engineered lag features used by the model. To regenerate it, run the corresponding save cell in `notebooks/energy_forecasting.ipynb`.
+
+See the [Methodology Summary](docs/methodology_summary.md) for a concise overview of the EDA findings, feature engineering, chronological validation, business implications, interpretability, and limitations.
+
 ## Technologies Used
 
 * Python
